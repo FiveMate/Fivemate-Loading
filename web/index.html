@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loading Screen</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</head>
+<body>
+    <div class="loading-screen">
+        <div class="video-container">
+            <div class="video-border top"></div>
+            <video id="background-video" autoplay muted loop playsinline>
+                <!-- <source type="video/mp4"> -->
+                
+                <source src="" type="video/mp4">
+                Tu navegador no soporta videos HTML5.
+            </video>
+            <div class="video-border bottom"></div>
+        </div>
+        
+        <div class="content-container">
+            <div class="logo-container">
+                <img class="logo" alt="Logo">
+                <h1 id="server-name"></h1>
+            </div>
+
+            <div class="control-buttons">
+                <button id="toggle-audio">Play</button>
+                <button id="next-track">Next</button>
+                <input type="range" id="volume-control" min="0" max="1" step="0.1" value="0.5">
+                <button id="discord-button" class="discord-btn">
+                    <i class="fab fa-discord"></i> Discord
+                </button>
+            </div>
+
+            <div class="loading-bar">
+                <div class="loading-bar-fill" id="loading-bar-fill"></div>
+                <div class="loading-text">
+                    <span id="loading-progress">0%</span>
+                </div>
+            </div>
+
+            <div id="loading-message" class="loading-message"></div>
+        </div>
+    </div>
+
+    <audio id="background-music" autoplay></audio>
+    <script src="config.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
