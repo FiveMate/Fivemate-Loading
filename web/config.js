@@ -3,7 +3,7 @@ window.loadConfig = {
     serverName: "Your Server Name",
 
     // Media Configuration
-    videoPath: "https://r2.fivemanage.com/pub/14z20ubliw1f.mp4", 
+    videoPath: "https://cdn.discordapp.com/attachments/1261749676395204739/1317313863041155092/video.mp4?ex=675e3ba3&is=675cea23&hm=6feabe92b011756058c619dec31f03b81091d2b5d536114b7299c8d93d626ba3&", 
     logoPath: "logo/logo.png",
     logoSize: "350px",
 
